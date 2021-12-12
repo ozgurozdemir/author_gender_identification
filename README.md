@@ -44,15 +44,15 @@ The experiments were conducted by 10-fold cross-validation preserving 20% of the
 For the experiment configurations, modify [```params.json```](params.json). Details of the parameters are given below
 
 |  Parameter | Description |
-|----------|:-----------:|
-| FEATURE_MODE |    raw/sf/bow/word2vec/doc2vec    |
-| LEARNING_MODE   |   ml/deep   |
-| DATASET_PATH   |   path to dataset   |
-| SAVE_DIR   |   path to directory for saving experiment results  |
-| EMBEDDINGS   |   embedding parameters. Refer to [BoW](https://scikit-learn.org/stable/modules/generated/sklearn.feature_extraction.text.TfidfVectorizer.html), [Word2Vec](https://radimrehurek.com/gensim/models/word2vec.html) and [Doc2Vec](https://radimrehurek.com/gensim/models/doc2vec.html) |
-| DIM_REDUCTIONS  |  dimensionality reduction algorithms. Use ```"none": {}``` for running experiments without dimensionality reduction.  |
-| CLASSIFIERS   |   classifier algorithms. Refer to  [```classifier_factory.py```](classifier_factory.py) for the list of the available classifiers. |
-| VERBOSE   |  feed back information while running the experiments  |
+|----------|:-----------|
+| ```FEATURE_MODE``` |    raw/sf/bow/word2vec/doc2vec    |
+| ```LEARNING_MODE```   |   ml/deep   |
+| ```DATASET_PATH```   |   path to dataset   |
+| ```SAVE_DIR```   |   path to directory for saving experiment results  |
+| ```EMBEDDINGS```   |   embedding parameters. Refer to [BoW](https://scikit-learn.org/stable/modules/generated/sklearn.feature_extraction.text.TfidfVectorizer.html), [Word2Vec](https://radimrehurek.com/gensim/models/word2vec.html) and [Doc2Vec](https://radimrehurek.com/gensim/models/doc2vec.html) |
+| ```DIM_REDUCTIONS```  |  dimensionality reduction algorithms. Use ```"none": {}``` for running experiments without dimensionality reduction.  |
+| ```CLASSIFIERS```   |   classifier algorithms. Refer to  [```classifier_factory.py```](classifier_factory.py) for the list of the available classifiers. |
+| ```VERBOSE```   |  feed back information while running the experiments  |
 
 Note that the Deep Learning experiments must run on ```FEATURE_MODE="raw"```.
 
